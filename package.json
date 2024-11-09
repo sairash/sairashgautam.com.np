@@ -9,6 +9,7 @@
   },
   "scripts": {
     "details:dev": "bun run ./details.ts && vitepress dev docs",
+    "details:build": "bun run ./details.ts && vitepress dev docs && cp -R ./docs/public/. ./dist/public/",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
