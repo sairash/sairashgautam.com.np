@@ -1,5 +1,7 @@
-# Photos
+# Photos 
 `Random` photos that I clicked.
+
+<img src="/mascot/camera.png" style="width: 150px; position: absolute; right: 0;" />
 
 ## 2024
 
