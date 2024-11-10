@@ -1,5 +1,5 @@
 import { defineConfig, type UserConfig } from 'vitepress'
-import implicitFigures from 'markdown-it-implicit-figures'
+
 
 async function load(): Promise<UserConfig>{
   // console.log("Hello")
@@ -8,14 +8,6 @@ async function load(): Promise<UserConfig>{
     title: "Sairash's Lair",
     description: "The Tale of Sairash",
     outDir: 'dist',
-    markdown: {
-      config: (md) => {
-        md.use(implicitFigures, {
-          figcaption: true,
-          copyAttrs: '^class$'
-        })
-      }
-    },
     themeConfig: {
       logo:"/mascot/wink.png",
       
