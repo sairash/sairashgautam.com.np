@@ -185,3 +185,6 @@ h2 {
 img {
   cursor: pointer;
 }
+a {
+  text-decoration: none !important;
+}
