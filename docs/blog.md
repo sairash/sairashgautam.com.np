@@ -3,6 +3,8 @@ import {toNepali} from "./.vitepress/custom/nepali_number"
 import details from '.vitepress/custom/details.json';
 
 const posts = details['blog']
+posts.sort((a, b) => new Date(b.frontmatter.rawDate) - new Date(a.frontmatter.rawDate));
+
 
 const groupPosts = () => {
   const groups = {}
@@ -84,9 +86,10 @@ const postGroups = groupPosts()
     }
 
     .peeking_into_frame {
-        width: 300px;
-        position: absolute;
-        top: 0;
+        height: 200px;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0;
     }
 </style>
