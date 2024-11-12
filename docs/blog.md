@@ -11,7 +11,6 @@ const groupPosts = () => {
   posts.forEach((post) => {
     const date = post.frontmatter.rawDate
     const yearMonth = new Date(date).getFullYear().toString() + '/' + (new Date(date).getMonth() + 1).toString().padStart(2, '0') ;
-    console.log(yearMonth)
     if (!groups[yearMonth]) {
         groups[yearMonth] = [];
     }
