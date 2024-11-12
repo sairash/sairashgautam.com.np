@@ -10,21 +10,22 @@ const groupPosts = () => {
   const groups = {}
   posts.forEach((post) => {
     const date = post.frontmatter.rawDate
-    const year = new Date(date).getFullYear().toString()
-    if (!groups[year])
-      groups[year] = []
+    const yearMonth = new Date(date).getFullYear().toString() + '/' + (new Date(date).getMonth() + 1).toString().padStart(2, '0') ;
+    console.log(yearMonth)
+    if (!groups[yearMonth]) {
+        groups[yearMonth] = [];
+    }
 
-    groups[year].push(post)
+    groups[yearMonth].push(post)
   })
   return groups
 }
 const postGroups = groupPosts()
 
-
 </script>
 
 
-<div v-for="year in Object.keys(postGroups).reverse()" :key="year" class="postGroup">
+<div v-for="year in Object.keys(postGroups)" :key="year" class="postGroup">
     <div>
         <div class="background">
             {{ toNepali(year) }}
@@ -48,23 +49,22 @@ const postGroups = groupPosts()
     .postGroup {
         position: relative;
         margin: 10rem 0;
-        display: flex;
-        justify-content: center;
     }
 
     .background {
         position: absolute;
-        font-size: 12rem;
+        font-size: 11rem;
         z-index: -1;
         opacity: 0.5;
         color: transparent;
-        left: -3rem;
+        left: -5rem;
         top: -3rem;
         -webkit-text-stroke: 2px var(--border);
     }
 
     @media screen and (max-width: 768px) {
         .background {
+            left: -1.5rem;
             font-size: 8rem;
         }
     }
