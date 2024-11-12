@@ -8,6 +8,7 @@ async function load(): Promise<UserConfig>{
     title: "Sairash's Lair",
     description: "The Tale of Sairash",
     outDir: 'dist',
+    cleanUrls: true,
     themeConfig: {
       logo:"/mascot/wink.png",
       
