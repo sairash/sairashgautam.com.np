@@ -16,7 +16,8 @@ async function load(): Promise<UserConfig>{
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Blog', link: '/blog' },
-        { text: 'Photos', link: '/photos' }
+        { text: 'About Me', link: '/blog/2024-09-28' },
+        { text: 'Photos', link: '/photos' },
       ],
       socialLinks: [
         { icon: 'github', link: 'https://github.com/sairash' }
