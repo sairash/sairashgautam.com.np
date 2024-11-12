@@ -6,7 +6,12 @@ export function toNepali (num: string | number) {
   
     let nepali_number = ''
     for (let i = 0; i < numArrLen; i++)
-      nepali_number += devnagari[parseInt(numArr[i])]
+      if (numArr[i] == "/") {
+        nepali_number += "/"
+      }else{
+        nepali_number += devnagari[parseInt(numArr[i])]
+
+      }
   
     return nepali_number
 }
