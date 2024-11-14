@@ -1,9 +1,9 @@
 ---
-title: Teasting VLANG
+title: Testing VLANG
 date: 2024-10-12
 ---
 
-# Teasting VLANG
+# Testing VLANG
 
 [<- Back to blogs](/blog)
 
