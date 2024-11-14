@@ -9,7 +9,7 @@ date: 2024-11-07
 
 ### Link to: [Danfe Programming Language](https://danfe.sairashgautam.com.np)
 
-I’ve just completed my own programming language, and it feels surreal to even say that. If I could go back and tell my younger self that I’d someday create a language, I probably wouldn’t believe it at first. But then, I know I would be so proud of me.
+I’ve just made my own programming language, and it feels surreal to even say that. If I could go back and tell my younger self that I’d someday create a language, I probably wouldn’t believe it at first. But then, I know I would be so proud of me.
 
 The language, [Danfe](https://danfe.sairashgautam.com.np), is similar to [Lua](https://lua.org), with some inspiration from [Python](https://www.python.org/) as well. It’s built in [V](https://vlang.io) and is interpreted—though a compiled version would sound pretty impressive, wouldn’t it? Who knows, maybe a `C` compiler written in Danfe isn’t that far-fetched! 😉 Danfe is Turing complete, and it can even leverage V code directly, so there’s a lot of potential.
 
