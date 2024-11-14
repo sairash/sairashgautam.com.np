@@ -1,5 +1,9 @@
 import { defineConfig, type UserConfig } from 'vitepress'
+import {createHighlighter} from 'shiki'
+import fs from 'fs'
 
+
+const danfeLang = JSON.parse(fs.readFileSync('./docs/public/danfe.json', 'utf8'))
 
 async function load(): Promise<UserConfig>{
   // console.log("Hello")
@@ -9,14 +13,31 @@ async function load(): Promise<UserConfig>{
     description: "The Tale of Sairash",
     outDir: 'dist',
     cleanUrls: true,
+    markdown: {
+      config: async (md) => {
+        const highlighter = await createHighlighter({
+          langs: [danfeLang, 'bash', 'md', 'js', 'sh', 'v'],
+          
+          themes: ['github-dark-high-contrast']
+        })
+  
+        md.options.highlight = (code, lang) => {
+          return highlighter.codeToHtml(code, {
+            lang: lang,
+            theme: 'github-dark-high-contrast'
+          })
+        }
+      },
+    },
     themeConfig: {
       logo:"/mascot/wink.png",
       
       // https://vitepress.dev/reference/default-theme-config
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Blog', link: '/blog' },
         { text: 'About Me', link: '/blog/2024-09-28' },
+        { text: 'Blog', link: '/blog' },
+        { text: 'Projects', link: '/projects' },
         { text: 'Photos', link: '/photos' },
       ],
       socialLinks: [
