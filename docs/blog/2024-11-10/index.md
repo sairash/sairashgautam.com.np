@@ -125,7 +125,7 @@ for code_ptr < len(code) {
 1. The current code in pointer is stored in the variable `command`.
 2. All of the other operations done in the if else sections are done as it is defined in the [Explaining Characters](./index.md#explaining-characters)
 
-Let's test the interpreter, by writing a simple brainfuck program:
+Let's test the interpreter, by writing a "simple" brainfuck program:
 ``` md
 ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
 ```
@@ -145,6 +145,9 @@ The full code is provided in this github repo: [Link](https://github.com/danfe-d
 
 ## Main Takeaway
 Writing an interpreter for brainfuck is `easier` than writing an actual brainfuck hello world program. Even tho, I created the whole interpreter I still can't write a bf program properly. It just shows how incredibly and masterfully the brainfuck esolang was created.
+
+
+<img src="/mascot/woe-is-me.png" style="height: 170px; position: absolute; right: 0;" />
 
 
 <style scoped>
