@@ -5,7 +5,7 @@ These are the wide list of `projects` and `compinies` that I have worked on.
 
 <ul>
 
-<div v-for="project in project_data.reverse()">
+<div v-for="project in intrested_data">
 
 <li v-if="project.type == 'interested'">
 
@@ -17,6 +17,7 @@ These are the wide list of `projects` and `compinies` that I have worked on.
 Link to: <a :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
+__{{project.date}}__
 
 <div v-html="project.description"></div>
 
@@ -39,7 +40,7 @@ Link to: <a :href="project.link">{{project.title}}</a>
 
 <ul>
 
-<div v-for="project in project_data.reverse()">
+<div v-for="project in project_data">
 
 <li v-if="project.type == 'project'">
 
@@ -50,6 +51,8 @@ Link to: <a :href="project.link">{{project.title}}</a>
 Link to: <a :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
+
+__{{project.date}}__
 
 <div v-html="project.description"></div>
 
@@ -70,7 +73,7 @@ Link to: <a :href="project.link">{{project.title}}</a>
 
 <ul>
 
-<div v-for="project in project_data.reverse()">
+<div v-for="project in work_data">
 
 <li v-if="project.type == 'job'">
 
@@ -82,6 +85,7 @@ Link to: <a :href="project.link">{{project.title}}</a>
 Link to: <a :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
+__{{project.date}}__
 
 <div v-html="project.description"></div>
 
@@ -111,6 +115,9 @@ Link to: <a :href="project.link">{{project.title}}</a>
 <script setup>
     import {onMounted, ref} from "vue";
 
+    var all_projects = []
+    var intrested_data = ref([])
+    var work_data = ref([])
     var project_data = ref([])
     var getting_data = ref()
 
@@ -131,7 +138,12 @@ Link to: <a :href="project.link">{{project.title}}</a>
     }
 
     onMounted(async() => {
-        project_data.value = await fetchProjectData()
+        all_projects = await fetchProjectData()
+        project_data.value = all_projects.filter((ele)=>{return ele.type== "project"})
+        work_data.value = all_projects.filter((ele)=>{return ele.type== "job"})
+        intrested_data.value = all_projects.filter((ele)=>{return ele.type== "interested"}).reverse()
+        
+
         getting_data.value.style.display = "none"
     })
 
