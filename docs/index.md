@@ -35,7 +35,7 @@ I'm Sairash Sharma Gautam, a `software enthusiast`, currently pursuing higher st
 I've spent the past +{{years}} years collaborating and building products with `companies` and `freelance gigs`. <br><br>
 I join forces with `founders` and `companies` to help mold their ideas and vision to reality. Ones that make their products shine, `resonate` with users, and help people create `memories`.
 
-<!-- Creator of [danfe programming language](https://danfe.sairashgautam.com.np) and [screeenpals](https://screeenpals.sairashgautam.com.np).  -->
+Creator of [danfe programming language](https://danfe.sairashgautam.com.np) and [screeenpals](https://screeenpals.sairashgautam.com.np). 
 
 ---
 [Download My CV](https://drive.google.com/file/d/1zaAVcj0rzuAksosbnnKLvePNw05tKx6S/view)
