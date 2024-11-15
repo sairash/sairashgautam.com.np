@@ -4,6 +4,9 @@ date: 2024-11-10
 ---
 
 # Writing a .bf interpreter
+
+[<- Back to blogs](/blog)
+
 Curious about what “.bf” is? Don’t worry—you’re not alone! The “.bf” extension belongs to `Brainfuck`, an "esoteric language" or esolang. Unlike conventional programming languages, esolangs are designed to push the boundaries of how we think about programming. Brainfuck, invented by Urban Müller in `1993`, is a classic in this genre. Müller created it with the ambitious goal of making a language for which he could write the smallest possible compiler—a feat he achieved with a compiler just 240 bytes in size 🤯.
 
 I’ve always been fascinated by the quirks of esoteric languages, so I decided to dive into Brainfuck by creating my own interpreter for it. And, just to add a personal twist, I built the interpreter in a language I developed myself, called Danfe! Brainfuck, despite its intimidating name, only uses eight characters: `>`, `<`, `+`, `-`, `.`, `,`, `[`, and `]`. Each character has a unique function, and together, they create a surprisingly powerful (and challenging!) language. Let’s break down what each symbol does and explore how they fit together in this mind-bending language.
@@ -147,6 +150,7 @@ The full code is provided in this github repo: [Link](https://github.com/danfe-d
 Writing an interpreter for brainfuck is `easier` than writing an actual brainfuck hello world program. Even tho, I created the whole interpreter I still can't write a bf program properly. It just shows how incredibly and masterfully the brainfuck esolang was created.
 
 
+<span style="color: gray; font-size: 14px;">Date: 2024-11-10</span>
 <img src="/mascot/woe-is-me.png" style="height: 170px; position: absolute; right: 0;" />
 
 
