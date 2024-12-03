@@ -15,4 +15,4 @@ If you want to learn more about advent of code or wanna comepete in it use this 
 
 
 <span style="color: gray; font-size: 14px;">Date: 2024-12-02</span>
-<img src="/mascot/life.png" style="height: 170px; position: absolute; right: 0;" />
+<img src="/mascot/christmas-tree.png" style="height: 170px; position: absolute; right: 0;" />
