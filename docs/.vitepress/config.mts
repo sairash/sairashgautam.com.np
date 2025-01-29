@@ -36,7 +36,8 @@ async function load(): Promise<UserConfig> {
           url: 'https://danfe.sairashgautam.com.np/',
           changefreq: 'monthly',
           priority: 0.8
-        },{
+        })
+        items.push({
           url: 'https://screeenpals.sairashgautam.com.np/',
           changefreq: 'monthly',
           priority: 0.8
