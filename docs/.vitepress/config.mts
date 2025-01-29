@@ -81,7 +81,6 @@ async function load(): Promise<UserConfig> {
       ['meta', { property: 'og:site_name', content: "Sairash's Lair" }],
 
       // Twitter Card
-      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
       ['meta', { name: 'twitter:title', content: 'Sairash Gautam' }],
       ['meta', { name: 'twitter:description', content: 'Be at ease, just a developer from Nepal!' }],
       ['meta', { name: 'twitter:image', content: 'https://sairashgautam.com.np/mascot/bulb.png' }],
