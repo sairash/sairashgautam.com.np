@@ -29,6 +29,9 @@ async function load(): Promise<UserConfig>{
         }
       },
     },
+    sitemap: {
+      hostname: "https://sairashgautam.com.np"
+    },
     themeConfig: {
       logo:"/mascot/wink.png",
       
