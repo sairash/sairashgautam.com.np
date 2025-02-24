@@ -3,6 +3,17 @@
 
 <img src="/mascot/camera.png" style="width: 150px; position: absolute; right: 0;" />
 
+## 2025
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="width: 300px" v-for="key in photos_2025">
+<img :src="key[0]" style="width: 100%"/>
+
+`Date:` {{key[1]}}
+
+</div>
+</div>
+
 ## 2024
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
@@ -18,13 +29,21 @@
 
 <script setup>
 
+    const photos_2025 = [
+        
+    ]
+
     const photos = [
+        
         ["https://utfs.io/f/Jk6mQ2VBlE6tEiTjoH9CJBlGwtFz0fbUoaVK5EOIYLA3nv7k", "2024-07-27"], 
         ["https://utfs.io/f/Jk6mQ2VBlE6t5wkQiDzXF7UBCiWynrLPft8gNJG1EsAh29aZ", "2002-08-03"], 
         ["https://utfs.io/f/Jk6mQ2VBlE6tjhui8zmkDAhdsL1rYizQwoxOcMaN5meRvb7I", "2024-02-24"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tWfzP5wJSQpKV0dDlMFAxIHX7wcYCPs1eEauN", "2024-08-24"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tsfy3DRbEQTcoxSCj0kiltyeMR9vVqnPZ7Fs1", "2024-11-01"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tZHt2kSgjRlfiMK6r04kEQNc59egnYLduJA3w", "2024-07-09"],
+        ["/images/1.jpg", "2024-12-20"],
+        ["/images/3.jpg", "2024-12-21"],
+        ["/images/4.jpg", "2024-12-25"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tyoKQ47tCFTLsGa3mY8iJX6eSRWAn2HkNd70x", "2024-11-03"],
         ["https://utfs.io/f/Jk6mQ2VBlE6t9nVfCXN1g3dW4hYzBClEsHpSKvjfumNtoMq6", "2024-06-25"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tZZqXojgjRlfiMK6r04kEQNc59egnYLduJA3w", "2024-10-09"],
