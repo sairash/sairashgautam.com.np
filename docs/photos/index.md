@@ -5,11 +5,10 @@
 
 ## 2025
 
+Photos From Month:
 <div style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="width: 300px" v-for="key in photos_2025">
-<img :src="key[0]" style="width: 100%"/>
-
-`Date:` {{key[1]}}
+<div style="width: 300px" v-for="(key, i) in photos_2025">
+{{i + 1}}: <a :href="key[1]" > {{key[0]}}</a>
 
 </div>
 </div>
@@ -30,13 +29,15 @@
 <script setup>
 
     const photos_2025 = [
-        
+        ["January", "/photos/2025#January"],
+        ["February", "/photos/2025#February"],
     ]
 
     const photos = [
         
         ["https://utfs.io/f/Jk6mQ2VBlE6tEiTjoH9CJBlGwtFz0fbUoaVK5EOIYLA3nv7k", "2024-07-27"], 
         ["https://utfs.io/f/Jk6mQ2VBlE6t5wkQiDzXF7UBCiWynrLPft8gNJG1EsAh29aZ", "2002-08-03"], 
+        ["/images/26.jpg", "2024-12-27"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tjhui8zmkDAhdsL1rYizQwoxOcMaN5meRvb7I", "2024-02-24"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tWfzP5wJSQpKV0dDlMFAxIHX7wcYCPs1eEauN", "2024-08-24"],
         ["https://utfs.io/f/Jk6mQ2VBlE6tsfy3DRbEQTcoxSCj0kiltyeMR9vVqnPZ7Fs1", "2024-11-01"],

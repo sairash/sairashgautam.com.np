@@ -54,7 +54,7 @@ async function load(): Promise<UserConfig> {
         { text: 'About Me', link: '/blog/2024-09-28' },
         { text: 'Blog', link: '/blog' },
         { text: 'Projects', link: '/projects' },
-        { text: 'Photos', link: '/photos' },
+        { text: 'Photos', link: '/photos/' },
       ],
       socialLinks: [
         { icon: 'github', link: 'https://github.com/sairash' },
