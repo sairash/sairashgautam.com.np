@@ -51,7 +51,7 @@ async function load(): Promise<UserConfig> {
       // https://vitepress.dev/reference/default-theme-config
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'About Me', link: '/blog/2024-09-28' },
+        { text: 'About Me', link: '/blog/2024-09-28/' },
         { text: 'Blog', link: '/blog' },
         { text: 'Projects', link: '/projects' },
         { text: 'Photos', link: '/photos/' },

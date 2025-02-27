@@ -21,11 +21,11 @@
 
 ## मेरो बारेमा (About me)
 
-म सइरश शर्मा गौतम, एक `सफ्टवेयर उत्साही`, हाल `नेपाल` मा उच्च अध्ययन गर्दै छु। म `नयाँ` कुरा सिक्न र `चुनौतीहरू` पार गर्न मन पराउँछु र 
-आफुलाई सुधार कसरी गर्न सकिन्छ भनेर विश्लेषण गर्ने प्रयास गर्छु। <br><br>
+म सइरश शर्मा गौतम, एक सफ्टवेयर उत्साही, हाल `नेपाल` मा बसेर बचेलोर्स इन कम्प्युटर साइन्स आध्यान गर्दै छु। मलाई नयाँ कुरा सिक्न र चुनौतीहरू पार गर्न मन पर्छ । <br><br>
 
-मैले विगत `+{{nepali_years}}` वर्षहरू कम्पनीहरू र फ्रीलान्स गिगहरूसँग सहकार्य र निर्माणको `काम` गर्दै आएको छु। <br><br>
-म संस्थापकहरू र कम्पनीहरूसँग मिलेर तिनीहरूको विचार र दृष्टिलाई `वास्तविकतामा` परिणत गर्न मद्दत गर्छु—यस्तो समान जो `प्रयोगकर्तासँग` सम्बन्धित हुन्छन्, र उनिहरुलाई `सम्झनाहरू` बनाउन मद्दत गर्छ।
+मैले विगत `+{{nepali_years}}` वर्ष देखि कम्पनीहरू र फ्रीलान्स गिगहरूसँग `काम` गर्दै आएको छु। <br><br>
+
+म कम्पनीहरूसँग मिलेर तिनीहरूको विचार र दृष्टिलाई `वास्तविकतामा` परिणत गर्न मद्दत गर्छु।
 
 ---
 ## English Version
@@ -38,7 +38,10 @@ I join forces with `founders` and `companies` to help mold their ideas and visio
 <!-- Creator of [danfe programming language](https://danfe.sairashgautam.com.np) and [screeenpals](https://screeenpals.sairashgautam.com.np).  -->
 
 ---
-[Download My CV](https://drive.google.com/file/d/1zaAVcj0rzuAksosbnnKLvePNw05tKx6S/view)
+[Download My CV](https://drive.google.com/file/d/1zaAVcj0rzuAksosbnnKLvePNw05tKx6S/view) |
+[Playable Portfolio](https://sairash.github.io/playable) |
+[View My Projects](/projects) |
+[Read My Blogs](/blog)
 
 
 <style scoped>
