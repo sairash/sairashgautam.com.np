@@ -256,7 +256,7 @@ For advanced use cases, explore:
 * `tmux` or `screen` for session persistence.
     
 
-Connect with me: [Sairash Link](https://sairashgautam.com.np)
+Hashnode: [Sairash Blogs](https://sairash.hashnode.dev/)
 
 
 
