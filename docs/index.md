@@ -9,7 +9,7 @@
 
 ## सइरश शर्मा गौतम 
 
-#### [नमस्ते - Namaste](./definations/namaste.md)
+_[नमस्ते - Namaste](./definations/namaste.md)_
 
 | Sairash in Person | Sairash while Online |
 | --------------- | ---------- |
@@ -21,11 +21,17 @@
 
 ## मेरो बारेमा (About me)
 
-म सइरश शर्मा गौतम, एक सफ्टवेयर उत्साही, हाल `नेपाल` मा बसेर बचेलोर्स इन कम्प्युटर साइन्स आध्यान गर्दै छु। मलाई नयाँ कुरा सिक्न र चुनौतीहरू पार गर्न मन पर्छ । <br><br>
 
-मैले विगत `+{{nepali_years}}` वर्ष देखि कम्पनीहरू र फ्रीलान्स गिगहरूसँग `काम` गर्दै आएको छु। <br><br>
+म साइरश शर्मा गौतम, एक उत्साही सफ्टवेयर विकासकर्ता, हाल `नेपालमा` कम्प्युटर साइन्समा स्नातक गर्दै छु।
 
-म कम्पनीहरूसँग मिलेर तिनीहरूको विचार र दृष्टिलाई `वास्तविकतामा` परिणत गर्न मद्दत गर्छु।
+नयाँ कुरा सिक्ने रुचि र चुनौतीहरू सामना गर्ने जोशका साथ मैले यो क्षेत्रमा करिब `+{{nepali_years}}` वर्ष अघि प्रवेश गरेँ।
+<br/>
+<br/>
+
+म विभिन्न कम्पनीहरूसँग सहकार्य गर्दै तिनीहरूको अवधारणा र दृष्टिकोणलाई वास्तविकतामा `रूपान्तरण` गर्ने कार्य गर्छु।
+
+म सइरश शर्मा गौतम, एक सफ्टवेयर उत्साही, हाल मा बसेर बचेलोर्स इन कम्प्युटर साइन्स आध्यान गर्दै छु। मलाई नयाँ कुरा सिक्न र `चुनौतीहरू` पार गर्न मन पर्छ । <br><br>
+
 
 ---
 ## English Version
@@ -38,14 +44,21 @@ I join forces with `founders` and `companies` to help mold their ideas and visio
 <!-- Creator of [danfe programming language](https://danfe.sairashgautam.com.np) and [screeenpals](https://screeenpals.sairashgautam.com.np).  -->
 
 ---
-[Download My CV](https://drive.google.com/file/d/1zaAVcj0rzuAksosbnnKLvePNw05tKx6S/view) |
-[Playable Portfolio](https://sairash.github.io/playable) |
-[View My Projects](/projects) |
-[Read My Blogs](/blog)
+## Relevent Links
+
+- ##### [Download My CV](https://drive.google.com/file/d/1JV8c1Q27njUbWQk0MH6zR4hwlMp2zdtF/view) 
+- [Playable Portfolio](https://sairash.github.io/playable)
 
 
-<style scoped>
+<!-- <style scoped>
 .header-anchor {
   display: none;
+}
+</style> -->
+
+<style scoped >
+a {
+  /* text-decoration:underline !important;  */
+  border-bottom: 2px solid !important;
 }
 </style>
