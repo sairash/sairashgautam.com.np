@@ -16,7 +16,7 @@ async function load(): Promise<UserConfig> {
     markdown: {
       config: async (md) => {
         const highlighter = await createHighlighter({
-          langs: [danfeLang, 'bash', 'md', 'js', 'sh', 'v', 'ts'],
+          langs: [danfeLang, 'bash', 'md', 'js', 'sh', 'v', 'ts', 'nginx', 'ini'],
 
           themes: ['github-dark-high-contrast']
         })
