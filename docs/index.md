@@ -46,7 +46,7 @@ I join forces with `founders` and `companies` to help mold their ideas and visio
 ---
 ## Relevent Links
 
-- [Download My CV](https://drive.google.com/file/d/1JV8c1Q27njUbWQk0MH6zR4hwlMp2zdtF/view) 
+- [Download My CV](https://drive.google.com/file/d/1Zz5EhxgF5lyRLBNNgMHhCr4hBp6QFA9i/view) 
 - [Playable Portfolio](https://sairash.github.io/playable)
 
 
