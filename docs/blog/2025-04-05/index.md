@@ -1,12 +1,12 @@
 ---
 title: Exploring the Complete Works of Swami Vivekananda
-description: Why do we believe what we believe? How can so many religions claim to be exclusive* truth?
+description: Why do we believe what we believe? How can so many religions claim to be exclusive] truth?
 head:
     - ['link', {rel: 'preload', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tkyn18wsJtwzFSDqExs53HfM7VZuCG8KhWNOl'}]
-    - ['meta', { name: 'keywords', content: 'Why do we believe what we believe? How can so many religions claim to be exclusive* truth?' }]
-    - ['meta', { property: 'og:description', content: 'Why do we believe what we believe? How can so many religions claim to be exclusive* truth?' }]
+    - ['meta', { name: 'keywords', content: 'Why do we believe what we believe? How can so many religions claim to be exclusive] truth?' }]
+    - ['meta', { property: 'og:description', content: 'Why do we believe what we believe? How can so many religions claim to be exclusive] truth?' }]
     - ['meta', { property: 'og:image', content: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tkyn18wsJtwzFSDqExs53HfM7VZuCG8KhWNOl' }]
-    - ['meta', { name: 'twitter:description', content: 'Why do we believe what we believe? How can so many religions claim to be exclusive* truth?' }]
+    - ['meta', { name: 'twitter:description', content: 'Why do we believe what we believe? How can so many religions claim to be exclusive] truth?' }]
     - ['meta', { name: 'twitter:image', content: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tkyn18wsJtwzFSDqExs53HfM7VZuCG8KhWNOl' }]
 date: 2025-04-05
 ---
