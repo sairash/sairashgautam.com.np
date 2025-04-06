@@ -1,0 +1,1326 @@
+{
+    "displayName": "Danfe",
+    "name": "danfe",
+    "alias": "df",
+    "fileTypes": [
+      ".df"
+    ],
+    "patterns": [
+      {
+        "include": "#v"
+      },
+  
+      {
+        "captures": {
+          "1": {
+            "name": "keyword.operator.new.danfe"
+          },
+          "2": {
+            "name": "storage.type.class.danfe"
+          },
+          "3": {
+            "name": "entity.name.type.instance.danfe"
+          },
+          "4": {
+            "name": "entity.name.type.instance.danfe"
+          }
+        },
+        "match": "(new)\\s+(?:(?:(class)\\s+(\\w+(?:\\.\\w*)*)?)|(\\w+(?:\\.\\w*)*))",
+        "name": "meta.class.instance.constructor.danfe"
+      },
+      {
+        "begin": "'''",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.begin.danfe"
+          }
+        },
+        "end": "'''",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.end.danfe"
+          }
+        },
+        "name": "string.quoted.single.heredoc.danfe",
+        "patterns": [
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.definition.escape.backslash.danfe"
+              }
+            },
+            "match": "(\\\\).",
+            "name": "constant.character.escape.backslash.danfe"
+          }
+        ]
+      },
+      {
+        "begin": "\"\"\"",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.begin.danfe"
+          }
+        },
+        "end": "\"\"\"",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.end.danfe"
+          }
+        },
+        "name": "string.quoted.double.heredoc.danfe",
+        "patterns": [
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.definition.escape.backslash.danfe"
+              }
+            },
+            "match": "(\\\\).",
+            "name": "constant.character.escape.backslash.danfe"
+          },
+          {
+            "include": "#interpolated_danfe"
+          }
+        ]
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "punctuation.definition.string.begin.danfe"
+          },
+          "2": {
+            "name": "source.js.embedded.danfe",
+            "patterns": [
+              {
+                "include": "source.js"
+              }
+            ]
+          },
+          "3": {
+            "name": "punctuation.definition.string.end.danfe"
+          }
+        },
+        "match": "(`)(.*)(`)",
+        "name": "string.quoted.script.danfe"
+      },
+      {
+        "begin": "(?<!#)###(?!#)",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.comment.danfe"
+          }
+        },
+        "end": "###",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.comment.danfe"
+          }
+        },
+        "name": "comment.block.danfe",
+        "patterns": [
+          {
+            "match": "(?<=^|\\s)@\\w*(?=\\s)",
+            "name": "storage.type.annotation.danfe"
+          }
+        ]
+      },
+      {
+        "begin": "#",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.comment.danfe"
+          }
+        },
+        "end": "$",
+        "name": "comment.line.number-sign.danfe"
+      },
+      {
+        "begin": "//",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.comment.danfe"
+          }
+        },
+        "end": "$",
+        "name": "comment.line.number-sign.danfe"
+      },
+      {
+        "begin": "///",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.begin.danfe"
+          }
+        },
+        "end": "(///)[gimuy]*",
+        "endCaptures": {
+          "1": {
+            "name": "punctuation.definition.string.end.danfe"
+          }
+        },
+        "name": "string.regexp.multiline.danfe",
+        "patterns": [
+          {
+            "include": "#heregexp"
+          }
+        ]
+      },
+      {
+        "begin": "(?<![\\w$])(/)(?=(?![/*+?])(.+)(/)[gimuy]*(?!\\s*[\\w$/(]))",
+        "beginCaptures": {
+          "1": {
+            "name": "punctuation.definition.string.begin.danfe"
+          }
+        },
+        "end": "(/)[gimuy]*(?!\\s*[\\w$/(])",
+        "endCaptures": {
+          "1": {
+            "name": "punctuation.definition.string.end.danfe"
+          }
+        },
+        "name": "string.regexp.danfe",
+        "patterns": [
+          {
+            "include": "source.js.regexp"
+          }
+        ]
+      },
+      {
+        "match": "\\b(?<![\\.$])(break|xod|todh|by|catch|continue|else|natra|finally|for|del|hatau|in|of|if|yedi|return|pathau|switch|then|throw|try|unless|when|while|until|loop|ghum|do|export|import|default|from|as|yield|async|await|(?<=for)\\s+own)(?!\\s*:)\\b",
+        "name": "keyword.control.danfe"
+      },
+      {
+        "match": "\\b(?<![\\.$])(delete|instanceof|new|typeof|rand_int|rand_str|len|println|input|assert|panicprakar)(?!\\s*:)\\b",
+        "name": "keyword.operator.$1.danfe"
+      },
+      {
+        "match": "\\b(?<![\\.$])(case|function|func|karya|v|endv|var|void|with|const|let|enum|native|__hasProp|__extends|__slice|__bind|__indexOf|implements|interface|package|private|protected|public|static)(?!\\s*:)\\b",
+        "name": "keyword.reserved.danfe"
+      },
+      {
+        "begin": "(?<=\\s|^)((@)?[a-zA-Z_$][\\w$]*)\\s*([:=])\\s*(?=(\\([^()]*\\)\\s*)?[=-]>)",
+        "beginCaptures": {
+          "1": {
+            "name": "entity.name.function.danfe"
+          },
+          "2": {
+            "name": "variable.other.readwrite.instance.danfe"
+          },
+          "3": {
+            "name": "keyword.operator.assignment.danfe"
+          }
+        },
+        "end": "[=-]>",
+        "endCaptures": {
+          "0": {
+            "name": "storage.type.function.danfe"
+          }
+        },
+        "name": "meta.function.danfe",
+        "patterns": [
+          {
+            "include": "#function_params"
+          }
+        ]
+      },
+      {
+        "begin": "(?<=\\s|^)(?:((')([^']*?)('))|((\")([^\"]*?)(\")))\\s*([:=])\\s*(?=(\\([^()]*\\)\\s*)?[=-]>)",
+        "beginCaptures": {
+          "1": {
+            "name": "string.quoted.single.danfe"
+          },
+          "2": {
+            "name": "punctuation.definition.string.begin.danfe"
+          },
+          "3": {
+            "name": "entity.name.function.danfe"
+          },
+          "4": {
+            "name": "punctuation.definition.string.end.danfe"
+          },
+          "5": {
+            "name": "string.quoted.double.danfe"
+          },
+          "6": {
+            "name": "punctuation.definition.string.begin.danfe"
+          },
+          "7": {
+            "name": "entity.name.function.danfe"
+          },
+          "8": {
+            "name": "punctuation.definition.string.end.danfe"
+          },
+          "9": {
+            "name": "keyword.operator.assignment.danfe"
+          }
+        },
+        "end": "[=-]>",
+        "endCaptures": {
+          "0": {
+            "name": "storage.type.function.danfe"
+          }
+        },
+        "name": "meta.function.danfe",
+        "patterns": [
+          {
+            "include": "#function_params"
+          }
+        ]
+      },
+      {
+        "begin": "(?=(\\([^()]*\\)\\s*)?[=-]>)",
+        "end": "[=-]>",
+        "endCaptures": {
+          "0": {
+            "name": "storage.type.function.danfe"
+          }
+        },
+        "name": "meta.function.inline.danfe",
+        "patterns": [
+          {
+            "include": "#function_params"
+          }
+        ]
+      },
+      {
+        "begin": "(?<=\\s|^)({)(?=[^'\"#]+?}[\\s\\]}]*=)",
+        "beginCaptures": {
+          "1": {
+            "name": "punctuation.definition.destructuring.begin.bracket.curly.danfe"
+          }
+        },
+        "end": "}",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.destructuring.end.bracket.curly.danfe"
+          }
+        },
+        "name": "meta.variable.assignment.destructured.object.danfe",
+        "patterns": [
+          {
+            "include": "$self"
+          },
+          {
+            "match": "[a-zA-Z$_]\\w*",
+            "name": "variable.assignment.danfe"
+          }
+        ]
+      },
+      {
+        "begin": "(?<=\\s|^)(\\[)(?=[^'\"#]+?\\][\\s\\]}]*=)",
+        "beginCaptures": {
+          "1": {
+            "name": "punctuation.definition.destructuring.begin.bracket.square.danfe"
+          }
+        },
+        "end": "\\]",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.destructuring.end.bracket.square.danfe"
+          }
+        },
+        "name": "meta.variable.assignment.destructured.array.danfe",
+        "patterns": [
+          {
+            "include": "$self"
+          },
+          {
+            "match": "[a-zA-Z$_]\\w*",
+            "name": "variable.assignment.danfe"
+          }
+        ]
+      },
+      {
+        "match": "\\b(?<!\\.|::)(true|thik|on|yes)(?!\\s*[:=][^=])\\b",
+        "name": "constant.language.boolean.true.danfe"
+      },
+      {
+        "match": "\\b(?<!\\.|::)(false|bethik|off|no)(?!\\s*[:=][^=])\\b",
+        "name": "constant.language.boolean.false.danfe"
+      },
+      {
+        "match": "\\b(?<!\\.|::)null(?!\\s*[:=][^=])\\b",
+        "name": "constant.language.null.danfe"
+      },
+      {
+        "match": "\\b(?<!\\.|::)extends(?!\\s*[:=])\\b",
+        "name": "variable.language.danfe"
+      },
+      {
+        "match": "(?<!\\.)\\b(?<!\\$)(super|this|arguments)(?!\\s*[:=][^=]|\\$)\\b",
+        "name": "variable.language.$1.danfe"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "storage.type.class.danfe"
+          },
+          "2": {
+            "name": "keyword.control.inheritance.danfe"
+          },
+          "3": {
+            "name": "entity.other.inherited-class.danfe"
+          }
+        },
+        "match": "(?<=\\s|^|\\[|\\()(class)\\s+(extends)\\s+(@?[a-zA-Z$\\._][\\w\\.]*)",
+        "name": "meta.class.danfe"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "storage.type.class.danfe"
+          },
+          "2": {
+            "name": "entity.name.type.class.danfe"
+          },
+          "3": {
+            "name": "keyword.control.inheritance.danfe"
+          },
+          "4": {
+            "name": "entity.other.inherited-class.danfe"
+          }
+        },
+        "match": "(?<=\\s|^|\\[|\\()(class\\b)\\s+(@?[a-zA-Z$_][\\w\\.]*)?(?:\\s+(extends)\\s+(@?[a-zA-Z$\\._][\\w\\.]*))?",
+        "name": "meta.class.danfe"
+      },
+      {
+        "match": "\\b(debugger|\\\\)\\b",
+        "name": "keyword.other.danfe"
+      },
+      {
+        "match": "\\b(Array|ArrayBuffer|Blob|Boolean|Date|document|Function|Int(8|16|32|64)Array|Math|Map|Number|Object|Proxy|RegExp|Set|String|WeakMap|window|Uint(8|16|32|64)Array|XMLHttpRequest)\\b",
+        "name": "support.class.danfe"
+      },
+      {
+        "match": "\\b(console)\\b",
+        "name": "entity.name.type.object.danfe"
+      },
+      {
+        "match": "((?<=console\\.)(debug|warn|info|log|error|time|timeEnd|assert))\\b",
+        "name": "support.function.console.danfe"
+      },
+      {
+        "match": "((?<=\\.)(apply|call|concat|every|filter|forEach|from|hasOwnProperty|indexOf|isPrototypeOf|join|lastIndexOf|map|of|pop|propertyIsEnumerable|push|reduce(Right)?|reverse|shift|slice|some|sort|splice|to(Locale)?String|unshift|valueOf))\\b",
+        "name": "support.function.method.array.danfe"
+      },
+      {
+        "match": "((?<=Array\\.)(isArray))\\b",
+        "name": "support.function.static.array.danfe"
+      },
+      {
+        "match": "((?<=Object\\.)(create|definePropert(ies|y)|freeze|getOwnProperty(Descriptors?|Names)|getProperty(Descriptor|Names)|getPrototypeOf|is(Extensible|Frozen|Sealed)?|isnt|keys|preventExtensions|seal))\\b",
+        "name": "support.function.static.object.danfe"
+      },
+      {
+        "match": "((?<=Math\\.)(abs|acos|acosh|asin|asinh|atan|atan2|atanh|ceil|cos|cosh|exp|expm1|floor|hypot|log|log10|log1p|log2|max|min|pow|random|round|sign|sin|sinh|sqrt|tan|tanh|trunc))\\b",
+        "name": "support.function.static.math.danfe"
+      },
+      {
+        "match": "((?<=Number\\.)(is(Finite|Integer|NaN)|toInteger))\\b",
+        "name": "support.function.static.number.danfe"
+      },
+      {
+        "match": "(?<!\\.)\\b(module|exports|__filename|__dirname|global|process)(?!\\s*:)\\b",
+        "name": "support.variable.danfe"
+      },
+      {
+        "match": "\\b(Infinity|NaN|undefined)\\b",
+        "name": "constant.language.danfe"
+      },
+      {
+        "include": "#operators"
+      },
+      {
+        "include": "#method_calls"
+      },
+      {
+        "include": "#function_calls"
+      },
+      {
+        "include": "#numbers"
+      },
+      {
+        "include": "#objects"
+      },
+      {
+        "include": "#properties"
+      },
+      {
+        "match": "::",
+        "name": "keyword.operator.prototype.danfe"
+      },
+      {
+        "match": "(?<!\\$)\\b\\d+[\\w$]*",
+        "name": "invalid.illegal.identifier.danfe"
+      },
+      {
+        "match": ";",
+        "name": "punctuation.terminator.statement.danfe"
+      },
+      {
+        "match": ",",
+        "name": "punctuation.separator.delimiter.danfe"
+      },
+      {
+        "begin": "{",
+        "beginCaptures": {
+          "0": {
+            "name": "meta.brace.curly.danfe"
+          }
+        },
+        "end": "}",
+        "endCaptures": {
+          "0": {
+            "name": "meta.brace.curly.danfe"
+          }
+        },
+        "patterns": [
+          {
+            "include": "$self"
+          }
+        ]
+      },
+      {
+        "begin": "\\[",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.array.begin.bracket.square.danfe"
+          }
+        },
+        "end": "\\]",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.array.end.bracket.square.danfe"
+          }
+        },
+        "patterns": [
+          {
+            "match": "(?<!\\.)\\.{3}",
+            "name": "keyword.operator.slice.exclusive.danfe"
+          },
+          {
+            "match": "(?<!\\.)\\.{2}",
+            "name": "keyword.operator.slice.inclusive.danfe"
+          },
+          {
+            "include": "$self"
+          }
+        ]
+      },
+      {
+        "begin": "\\(",
+        "beginCaptures": {
+          "0": {
+            "name": "meta.brace.round.danfe"
+          }
+        },
+        "end": "\\)",
+        "endCaptures": {
+          "0": {
+            "name": "meta.brace.round.danfe"
+          }
+        },
+        "patterns": [
+          {
+            "include": "$self"
+          }
+        ]
+      },
+      {
+        "include": "#instance_variable"
+      },
+      {
+        "include": "#single_quoted_string"
+      },
+      {
+        "include": "#double_quoted_string"
+      }
+    ],
+    "repository": {
+      "arguments": {
+        "patterns": [
+          {
+            "begin": "\\(",
+            "beginCaptures": {
+              "0": {
+                "name": "punctuation.definition.arguments.begin.bracket.round.danfe"
+              }
+            },
+            "end": "\\)",
+            "endCaptures": {
+              "0": {
+                "name": "punctuation.definition.arguments.end.bracket.round.danfe"
+              }
+            },
+            "name": "meta.arguments.danfe",
+            "patterns": [
+              {
+                "include": "$self"
+              }
+            ]
+          },
+          {
+            "begin": "(?=(@|@?[\\w$]+|[=-]>|-\\d|\\[|{|\"|'))",
+            "end": "(?=\\s*(?<![\\w$])(of|in|then|is|isnt|and|or|for|del|hatau|else|natra|when|if|yedi|unless|by|instanceof)(?![\\w$]))|(?=\\s*(}|\\]|\\)|#|%i|$))",
+            "name": "meta.arguments.danfe",
+            "patterns": [
+              {
+                "include": "$self"
+              }
+            ]
+          }
+        ]
+      },
+      "double_quoted_string": {
+        "patterns": [
+          {
+            "begin": "\"",
+            "beginCaptures": {
+              "0": {
+                "name": "punctuation.definition.string.begin.danfe"
+              }
+            },
+            "end": "\"",
+            "endCaptures": {
+              "0": {
+                "name": "punctuation.definition.string.end.danfe"
+              }
+            },
+            "name": "string.quoted.double.danfe",
+            "patterns": [
+              {
+                "captures": {
+                  "1": {
+                    "name": "punctuation.definition.escape.backslash.danfe"
+                  }
+                },
+                "match": "(\\\\)(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)",
+                "name": "constant.character.escape.backslash.danfe"
+              },
+              {
+                "include": "#interpolated_danfe"
+              }
+            ]
+          }
+        ]
+      },
+      "embedded_comment": {
+        "patterns": [
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.definition.comment.danfe"
+              }
+            },
+            "match": "(?<!\\\\)(#).*$\\n?",
+            "name": "comment.line.number-sign.danfe"
+          }
+        ]
+      },
+      "function_calls": {
+        "patterns": [
+          {
+            "begin": "(@)?([\\w$]+)(?=\\()",
+            "beginCaptures": {
+              "1": {
+                "name": "variable.other.readwrite.instance.danfe"
+              },
+              "2": {
+                "patterns": [
+                  {
+                    "include": "#function_names"
+                  }
+                ]
+              }
+            },
+            "end": "(?<=\\))",
+            "name": "meta.function-call.danfe",
+            "patterns": [
+              {
+                "include": "#arguments"
+              }
+            ]
+          },
+          {
+            "begin": "(@)?([\\w$]+)\\s*(?=\\s+(?!(?<![\\w$])(of|in|then|is|isnt|and|or|for|del|hatau|else|natra|when|if|yedi|unless|by|instanceof)(?![\\w$]))(?=(@?[\\w$]+|[=-]>|-\\d|\\[|{|\"|')))",
+            "beginCaptures": {
+              "1": {
+                "name": "variable.other.readwrite.instance.danfe"
+              },
+              "2": {
+                "patterns": [
+                  {
+                    "include": "#function_names"
+                  }
+                ]
+              }
+            },
+            "end": "(?=\\s*(?<![\\w$])(of|in|then|is|isnt|and|or|for|del|hatau|else|natra|when|if|yedi|unless|by|instanceof)(?![\\w$]))|(?=\\s*(}|\\]|\\)|#|%i|$))",
+            "name": "meta.function-call.danfe",
+            "patterns": [
+              {
+                "include": "#arguments"
+              }
+            ]
+          }
+        ]
+      },
+      "function_names": {
+        "patterns": [
+          {
+            "match": "\\b(isNaN|isFinite|eval|uneval|parseInt|parseFloat|decodeURI|decodeURIComponent|encodeURI|encodeURIComponent|escape|unescape|require|set(Interval|Timeout)|clear(Interval|Timeout))\\b",
+            "name": "support.function.danfe"
+          },
+          {
+            "match": "[a-zA-Z_$][\\w$]*",
+            "name": "entity.name.function.danfe"
+          },
+          {
+            "match": "\\d[\\w$]*",
+            "name": "invalid.illegal.identifier.danfe"
+          }
+        ]
+      },
+      "function_params": {
+        "patterns": [
+          {
+            "begin": "\\(",
+            "beginCaptures": {
+              "0": {
+                "name": "punctuation.definition.parameters.begin.bracket.round.danfe"
+              }
+            },
+            "end": "\\)",
+            "endCaptures": {
+              "0": {
+                "name": "punctuation.definition.parameters.end.bracket.round.danfe"
+              }
+            },
+            "name": "meta.parameters.danfe",
+            "patterns": [
+              {
+                "captures": {
+                  "1": {
+                    "name": "variable.parameter.function.danfe"
+                  },
+                  "2": {
+                    "name": "keyword.operator.splat.danfe"
+                  }
+                },
+                "match": "([a-zA-Z_$][\\w$]*)(\\.\\.\\.)?"
+              },
+              {
+                "captures": {
+                  "1": {
+                    "name": "variable.parameter.function.readwrite.instance.danfe"
+                  },
+                  "2": {
+                    "name": "keyword.operator.splat.danfe"
+                  }
+                },
+                "match": "(@(?:[a-zA-Z_$][\\w$]*)?)(\\.\\.\\.)?"
+              },
+              {
+                "include": "$self"
+              }
+            ]
+          }
+        ]
+      },
+      "heregexp": {
+        "patterns": [
+          {
+            "match": "\\\\[bB]|\\^|\\$",
+            "name": "keyword.control.anchor.regexp"
+          },
+          {
+            "match": "\\\\[1-9]\\d*",
+            "name": "keyword.other.back-reference.regexp"
+          },
+          {
+            "match": "[?+*]|\\{(\\d+,\\d+|\\d+,|,\\d+|\\d+)\\}\\??",
+            "name": "keyword.operator.quantifier.regexp"
+          },
+          {
+            "match": "\\|",
+            "name": "keyword.operator.or.regexp"
+          },
+          {
+            "begin": "(\\()((\\?=)|(\\?!))",
+            "beginCaptures": {
+              "1": {
+                "name": "punctuation.definition.group.regexp"
+              },
+              "3": {
+                "name": "meta.assertion.look-ahead.regexp"
+              },
+              "4": {
+                "name": "meta.assertion.negative-look-ahead.regexp"
+              }
+            },
+            "end": "(\\))",
+            "endCaptures": {
+              "1": {
+                "name": "punctuation.definition.group.regexp"
+              }
+            },
+            "name": "meta.group.assertion.regexp",
+            "patterns": [
+              {
+                "include": "#heregexp"
+              }
+            ]
+          },
+          {
+            "begin": "\\((\\?:)?",
+            "beginCaptures": {
+              "0": {
+                "name": "punctuation.definition.group.regexp"
+              }
+            },
+            "end": "\\)",
+            "endCaptures": {
+              "0": {
+                "name": "punctuation.definition.group.regexp"
+              }
+            },
+            "name": "meta.group.regexp",
+            "patterns": [
+              {
+                "include": "#heregexp"
+              }
+            ]
+          },
+          {
+            "begin": "(\\[)(\\^)?",
+            "beginCaptures": {
+              "1": {
+                "name": "punctuation.definition.character-class.regexp"
+              },
+              "2": {
+                "name": "keyword.operator.negation.regexp"
+              }
+            },
+            "end": "(\\])",
+            "endCaptures": {
+              "1": {
+                "name": "punctuation.definition.character-class.regexp"
+              }
+            },
+            "name": "constant.other.character-class.set.regexp",
+            "patterns": [
+              {
+                "captures": {
+                  "1": {
+                    "name": "constant.character.numeric.regexp"
+                  },
+                  "2": {
+                    "name": "constant.character.control.regexp"
+                  },
+                  "3": {
+                    "name": "constant.character.escape.backslash.regexp"
+                  },
+                  "4": {
+                    "name": "constant.character.numeric.regexp"
+                  },
+                  "5": {
+                    "name": "constant.character.control.regexp"
+                  },
+                  "6": {
+                    "name": "constant.character.escape.backslash.regexp"
+                  }
+                },
+                "match": "(?:.|(\\\\(?:[0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}))|(\\\\c[A-Z])|(\\\\.))-(?:[^\\]\\\\]|(\\\\(?:[0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4}))|(\\\\c[A-Z])|(\\\\.))",
+                "name": "constant.other.character-class.range.regexp"
+              },
+              {
+                "include": "#regex-character-class"
+              }
+            ]
+          },
+          {
+            "include": "#regex-character-class"
+          },
+          {
+            "include": "#interpolated_danfe"
+          },
+          {
+            "include": "#embedded_comment"
+          }
+        ]
+      },
+      "instance_variable": {
+        "patterns": [
+          {
+            "match": "(@)([a-zA-Z_$]\\w*)?",
+            "name": "variable.other.readwrite.instance.danfe"
+          }
+        ]
+      },
+      "interpolated_danfe": {
+        "patterns": [
+          {
+            "begin": "\\%i\\{",
+            "captures": {
+              "0": {
+                "name": "punctuation.section.embedded.danfe"
+              }
+            },
+            "end": "\\}",
+            "name": "source.danfe.embedded.source",
+            "patterns": [
+              {
+                "include": "$self"
+              }
+            ]
+          }
+        ]
+      },
+      "v": {
+        "patterns": [
+          {
+            "include": "#v-tag"
+          },
+          {
+            "include": "#v-end-tag"
+          }
+        ]
+      },
+      "v-attribute": {
+        "patterns": [
+          {
+            "captures": {
+              "1": {
+                "name": "entity.other.attribute-name.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.assignment.danfe"
+              }
+            },
+            "match": "(?:^|\\s+)([-\\w.]+)\\s*(=)"
+          },
+          {
+            "include": "#double_quoted_string"
+          },
+          {
+            "include": "#single_quoted_string"
+          },
+          {
+            "include": "#v-expression"
+          }
+        ]
+      },
+      "v-end-tag": {
+        "patterns": [
+          {
+            "begin": "(</)([-\\w\\.]+)",
+            "beginCaptures": {
+              "1": {
+                "name": "punctuation.definition.tag.danfe"
+              },
+              "2": {
+                "name": "entity.name.tag.danfe"
+              }
+            },
+            "end": "(/?>)",
+            "name": "meta.tag.danfe"
+          }
+        ]
+      },
+      "v-expression": {
+        "begin": "{",
+        "beginCaptures": {
+          "0": {
+            "name": "meta.brace.curly.danfe"
+          }
+        },
+        "end": "}",
+        "endCaptures": {
+          "0": {
+            "name": "meta.brace.curly.danfe"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#double_quoted_string"
+          },
+          {
+            "include": "$self"
+          }
+        ]
+      },
+      "v-tag": {
+        "patterns": [
+          {
+            "begin": "(<)([-\\w\\.]+)",
+            "beginCaptures": {
+              "1": {
+                "name": "punctuation.definition.tag.danfe"
+              },
+              "2": {
+                "name": "entity.name.tag.danfe"
+              }
+            },
+            "end": "(/?>)",
+            "name": "meta.tag.danfe",
+            "patterns": [
+              {
+                "include": "#v-attribute"
+              }
+            ]
+          }
+        ]
+      },
+      "method_calls": {
+        "patterns": [
+          {
+            "begin": "(?:(\\.)|(::))\\s*([\\w$]+)\\s*(?=\\()",
+            "beginCaptures": {
+              "1": {
+                "name": "punctuation.separator.method.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "patterns": [
+                  {
+                    "include": "#method_names"
+                  }
+                ]
+              }
+            },
+            "end": "(?<=\\))",
+            "name": "meta.method-call.danfe",
+            "patterns": [
+              {
+                "include": "#arguments"
+              }
+            ]
+          },
+          {
+            "begin": "(?:(\\.)|(::))\\s*([\\w$]+)\\s*(?=\\s+(?!(?<![\\w$])(of|in|then|is|isnt|and|or|for|del|hatau|else|natra|when|if|yedi|unless|by|instanceof)(?![\\w$]))(?=(@|@?[\\w$]+|[=-]>|-\\d|\\[|{|\"|')))",
+            "beginCaptures": {
+              "1": {
+                "name": "punctuation.separator.method.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "patterns": [
+                  {
+                    "include": "#method_names"
+                  }
+                ]
+              }
+            },
+            "end": "(?=\\s*(?<![\\w$])(of|in|then|is|isnt|and|or|for|del|hatau|else|natra|when|if|yedi|unless|by|instanceof)(?![\\w$]))|(?=\\s*(}|\\]|\\)|#|%i|$))",
+            "name": "meta.method-call.danfe",
+            "patterns": [
+              {
+                "include": "#arguments"
+              }
+            ]
+          }
+        ]
+      },
+      "method_names": {
+        "patterns": [
+          {
+            "match": "\\bon(Rowsinserted|Rowsdelete|Rowenter|Rowexit|Resize|Resizestart|Resizeend|Reset|Readystatechange|Mouseout|Mouseover|Mousedown|Mouseup|Mousemove|Before(cut|deactivate|unload|update|paste|print|editfocus|activate)|Blur|Scrolltop|Submit|Select|Selectstart|Selectionchange|Hover|Help|Change|Contextmenu|Controlselect|Cut|Cellchange|Clock|Close|Deactivate|Datasetchanged|Datasetcomplete|Dataavailable|Drop|Drag|Dragstart|Dragover|Dragdrop|Dragenter|Dragend|Dragleave|Dblclick|Unload|Paste|Propertychange|Error|Errorupdate|Keydown|Keyup|Keypress|Focus|Load|Activate|Afterupdate|Afterprint|Abort)\\b",
+            "name": "support.function.event-handler.danfe"
+          },
+          {
+            "match": "\\b(shift|showModelessDialog|showModalDialog|showHelp|scroll|scrollX|scrollByPages|scrollByLines|scrollY|scrollTo|stop|strike|sizeToContent|sidebar|signText|sort|sup|sub|substr|substring|splice|split|send|set(Milliseconds|Seconds|Minutes|Hours|Month|Year|FullYear|Date|UTC(Milliseconds|Seconds|Minutes|Hours|Month|FullYear|Date)|Time|Hotkeys|Cursor|ZOptions|Active|Resizable|RequestHeader)|search|slice|savePreferences|small|home|handleEvent|navigate|char|charCodeAt|charAt|concat|contextual|confirm|compile|clear|captureEvents|call|createStyleSheet|createPopup|createEventObject|to(GMTString|UTCString|String|Source|UpperCase|LowerCase|LocaleString)|test|taint|taintEnabled|indexOf|italics|disableExternalCapture|dump|detachEvent|unshift|untaint|unwatch|updateCommands|join|javaEnabled|pop|push|plugins.refresh|paddings|parse|print|prompt|preference|enableExternalCapture|exec|execScript|valueOf|UTC|find|file|fileModifiedDate|fileSize|fileCreatedDate|fileUpdatedDate|fixed|fontsize|fontcolor|forward|fromCharCode|watch|link|load|lastIndexOf|anchor|attachEvent|atob|apply|alert|abort|routeEvents|resize|resizeBy|resizeTo|recalc|returnValue|replace|reverse|reload|releaseCapture|releaseEvents|go|get(Milliseconds|Seconds|Minutes|Hours|Month|Day|Year|FullYear|Time|Date|TimezoneOffset|UTC(Milliseconds|Seconds|Minutes|Hours|Day|Month|FullYear|Date)|Attention|Selection|ResponseHeader|AllResponseHeaders)|moveBy|moveBelow|moveTo|moveToAbsolute|moveAbove|mergeAttributes|match|margins|btoa|big|bold|borderWidths|blink|back)\\b",
+            "name": "support.function.danfe"
+          },
+          {
+            "match": "\\b(acceptNode|add|addEventListener|addTextTrack|adoptNode|after|animate|append|appendChild|appendData|before|blur|canPlayType|captureStream|caretPositionFromPoint|caretRangeFromPoint|checkValidity|clear|click|cloneContents|cloneNode|cloneRange|close|closest|collapse|compareBoundaryPoints|compareDocumentPosition|comparePoint|contains|convertPointFromNode|convertQuadFromNode|convertRectFromNode|createAttribute|createAttributeNS|createCaption|createCDATASection|createComment|createContextualFragment|createDocument|createDocumentFragment|createDocumentType|createElement|createElementNS|createEntityReference|createEvent|createExpression|createHTMLDocument|createNodeIterator|createNSResolver|createProcessingInstruction|createRange|createShadowRoot|createTBody|createTextNode|createTFoot|createTHead|createTreeWalker|delete|deleteCaption|deleteCell|deleteContents|deleteData|deleteRow|deleteTFoot|deleteTHead|detach|disconnect|dispatchEvent|elementFromPoint|elementsFromPoint|enableStyleSheetsForSet|entries|evaluate|execCommand|exitFullscreen|exitPointerLock|expand|extractContents|fastSeek|firstChild|focus|forEach|get|getAll|getAnimations|getAttribute|getAttributeNames|getAttributeNode|getAttributeNodeNS|getAttributeNS|getBoundingClientRect|getBoxQuads|getClientRects|getContext|getDestinationInsertionPoints|getElementById|getElementsByClassName|getElementsByName|getElementsByTagName|getElementsByTagNameNS|getItem|getNamedItem|getSelection|getStartDate|getVideoPlaybackQuality|has|hasAttribute|hasAttributeNS|hasAttributes|hasChildNodes|hasFeature|hasFocus|importNode|initEvent|insertAdjacentElement|insertAdjacentHTML|insertAdjacentText|insertBefore|insertCell|insertData|insertNode|insertRow|intersectsNode|isDefaultNamespace|isEqualNode|isPointInRange|isSameNode|item|key|keys|lastChild|load|lookupNamespaceURI|lookupPrefix|matches|move|moveAttribute|moveAttributeNode|moveChild|moveNamedItem|namedItem|nextNode|nextSibling|normalize|observe|open|parentNode|pause|play|postMessage|prepend|preventDefault|previousNode|previousSibling|probablySupportsContext|queryCommandEnabled|queryCommandIndeterm|queryCommandState|queryCommandSupported|queryCommandValue|querySelector|querySelectorAll|registerContentHandler|registerElement|registerProtocolHandler|releaseCapture|releaseEvents|remove|removeAttribute|removeAttributeNode|removeAttributeNS|removeChild|removeEventListener|removeItem|replace|replaceChild|replaceData|replaceWith|reportValidity|requestFullscreen|requestPointerLock|reset|scroll|scrollBy|scrollIntoView|scrollTo|seekToNextFrame|select|selectNode|selectNodeContents|set|setAttribute|setAttributeNode|setAttributeNodeNS|setAttributeNS|setCapture|setCustomValidity|setEnd|setEndAfter|setEndBefore|setItem|setNamedItem|setRangeText|setSelectionRange|setSinkId|setStart|setStartAfter|setStartBefore|slice|splitText|stepDown|stepUp|stopImmediatePropagation|stopPropagation|submit|substringData|supports|surroundContents|takeRecords|terminate|toBlob|toDataURL|toggle|toString|values|write|writeln)\\b",
+            "name": "support.function.dom.danfe"
+          },
+          {
+            "match": "[a-zA-Z_$][\\w$]*",
+            "name": "entity.name.function.danfe"
+          },
+          {
+            "match": "\\d[\\w$]*",
+            "name": "invalid.illegal.identifier.danfe"
+          }
+        ]
+      },
+      "numbers": {
+        "patterns": [
+          {
+            "match": "\\b(?<!\\$)0(x|X)[0-9a-fA-F]+\\b(?!\\$)",
+            "name": "constant.numeric.hex.danfe"
+          },
+          {
+            "match": "\\b(?<!\\$)0(b|B)[01]+\\b(?!\\$)",
+            "name": "constant.numeric.binary.danfe"
+          },
+          {
+            "match": "\\b(?<!\\$)0(o|O)?[0-7]+\\b(?!\\$)",
+            "name": "constant.numeric.octal.danfe"
+          },
+          {
+            "captures": {
+              "0": {
+                "name": "constant.numeric.decimal.danfe"
+              },
+              "1": {
+                "name": "punctuation.separator.decimal.period.danfe"
+              },
+              "2": {
+                "name": "punctuation.separator.decimal.period.danfe"
+              },
+              "3": {
+                "name": "punctuation.separator.decimal.period.danfe"
+              },
+              "4": {
+                "name": "punctuation.separator.decimal.period.danfe"
+              },
+              "5": {
+                "name": "punctuation.separator.decimal.period.danfe"
+              },
+              "6": {
+                "name": "punctuation.separator.decimal.period.danfe"
+              }
+            },
+            "match": "(?<!\\$)(?:(?:\\b\\d+(\\.)\\d+[eE][+-]?\\d+\\b)|(?:\\b\\d+(\\.)[eE][+-]?\\d+\\b)|(?:\\B(\\.)\\d+[eE][+-]?\\d+\\b)|(?:\\b\\d+[eE][+-]?\\d+\\b)|(?:\\b\\d+(\\.)\\d+\\b)|(?:\\b\\d+(?=\\.{2,3}))|(?:\\b\\d+(\\.)\\B)|(?:\\B(\\.)\\d+\\b)|(?:\\b\\d+\\b(?!\\.)))(?!\\$)"
+          }
+        ]
+      },
+      "objects": {
+        "patterns": [
+          {
+            "match": "[A-Z][A-Z0-9_$]*(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))",
+            "name": "constant.other.object.danfe"
+          },
+          {
+            "match": "[a-zA-Z_$][\\w$]*(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))",
+            "name": "variable.other.object.danfe"
+          }
+        ]
+      },
+      "operators": {
+        "patterns": [
+          {
+            "captures": {
+              "1": {
+                "name": "variable.assignment.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.assignment.compound.danfe"
+              }
+            },
+            "match": "(?:([a-zA-Z$_][\\w$]*)?\\s+|(?<![\\w$]))(and=|or=)"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "variable.assignment.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.assignment.compound.danfe"
+              }
+            },
+            "match": "([a-zA-Z$_][\\w$]*)?\\s*(%=|\\+=|-=|\\*=|&&=|\\|\\|=|\\?=|(?<!\\()/=)"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "variable.assignment.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.assignment.compound.bitwise.danfe"
+              }
+            },
+            "match": "([a-zA-Z$_][\\w$]*)?\\s*(&=|\\^=|<<=|>>=|>>>=|\\|=)"
+          },
+          {
+            "match": "<<|>>>|>>",
+            "name": "keyword.operator.bitwise.shift.danfe"
+          },
+          {
+            "match": "!=|<=|>=|==|<|>",
+            "name": "keyword.operator.comparison.danfe"
+          },
+          {
+            "match": "&&|!|\\|\\|",
+            "name": "keyword.operator.logical.danfe"
+          },
+          {
+            "match": "&|\\||\\^|~",
+            "name": "keyword.operator.bitwise.danfe"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "variable.assignment.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.assignment.danfe"
+              }
+            },
+            "match": "([a-zA-Z$_][\\w$]*)?\\s*(=|:(?!:))(?![>=])"
+          },
+          {
+            "match": "--",
+            "name": "keyword.operator.decrement.danfe"
+          },
+          {
+            "match": "\\+\\+",
+            "name": "keyword.operator.increment.danfe"
+          },
+          {
+            "match": "\\.\\.\\.",
+            "name": "keyword.operator.splat.danfe"
+          },
+          {
+            "match": "\\?",
+            "name": "keyword.operator.existential.danfe"
+          },
+          {
+            "match": "%|\\*|/|-|\\+",
+            "name": "keyword.operator.danfe"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "keyword.operator.logical.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.comparison.danfe"
+              }
+            },
+            "match": "\\b(?<![\\.$])(?:(and|or|not)|(is|isnt))(?!\\s*:)\\b"
+          }
+        ]
+      },
+      "properties": {
+        "patterns": [
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.separator.property.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "name": "constant.other.object.property.danfe"
+              }
+            },
+            "match": "(?=>(\\.)|(::))\\s*([A-Z][A-Z0-9_$]*\\b\\$*)(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.separator.property.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "name": "variable.other.object.property.danfe"
+              }
+            },
+            "match": "(?=>(\\.)|(::))\\s*(\\$*[a-zA-Z_$][\\w$]*)(?=\\s*\\??(\\.\\s*[a-zA-Z_$]\\w*|::))"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.separator.property.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "name": "constant.other.property.danfe"
+              }
+            },
+            "match": "(?:(\\.)|(::))\\s*([A-Z][A-Z0-9_$]*\\b\\$*)"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.separator.property.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "name": "variable.other.property.danfe"
+              }
+            },
+            "match": "(?:(\\.)|(::))\\s*(\\$*[a-zA-Z_$][\\w$]*)"
+          },
+          {
+            "captures": {
+              "1": {
+                "name": "punctuation.separator.property.period.danfe"
+              },
+              "2": {
+                "name": "keyword.operator.prototype.danfe"
+              },
+              "3": {
+                "name": "invalid.illegal.identifier.danfe"
+              }
+            },
+            "match": "(?:(\\.)|(::))\\s*(\\d[\\w$]*)"
+          }
+        ]
+      },
+      "regex-character-class": {
+        "patterns": [
+          {
+            "match": "\\\\[wWsSdD]|\\.",
+            "name": "constant.character.character-class.regexp"
+          },
+          {
+            "match": "\\\\([0-7]{3}|x[0-9A-Fa-f]{2}|u[0-9A-Fa-f]{4})",
+            "name": "constant.character.numeric.regexp"
+          },
+          {
+            "match": "\\\\c[A-Z]",
+            "name": "constant.character.control.regexp"
+          },
+          {
+            "match": "\\\\.",
+            "name": "constant.character.escape.backslash.regexp"
+          }
+        ]
+      },
+      "single_quoted_string": {
+        "patterns": [
+          {
+            "begin": "'",
+            "beginCaptures": {
+              "0": {
+                "name": "punctuation.definition.string.begin.danfe"
+              }
+            },
+            "end": "'",
+            "endCaptures": {
+              "0": {
+                "name": "punctuation.definition.string.end.danfe"
+              }
+            },
+            "name": "string.quoted.single.danfe",
+            "patterns": [
+              {
+                "captures": {
+                  "1": {
+                    "name": "punctuation.definition.escape.backslash.danfe"
+                  }
+                },
+                "match": "(\\\\)(x[0-9A-Fa-f]{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
+                "name": "constant.character.escape.backslash.danfe"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scopeName": "source.danfe"
+  }
