@@ -51,7 +51,7 @@ function _convertDate(date: string, locale: string, timezone: string) {
 }
 
 function calculateReadTime(content: string): number {
-    const wordsPerMinute = 400
+    const wordsPerMinute = 1400
     const approximateLength = content.replace(/\r?\n/g, '').length
 
     return Math.ceil(approximateLength / wordsPerMinute)
