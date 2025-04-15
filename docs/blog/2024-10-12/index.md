@@ -32,4 +32,7 @@ println(output_string)
 ```
 V uses a similar approach for handling `null` returns, making it even easier to work with optional values. I’m excited to dig deeper into this language and build something `cool` with it!
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-10-12</span>

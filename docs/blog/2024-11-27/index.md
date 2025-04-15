@@ -70,5 +70,9 @@ You’re probably wondering what steps I’ve taken to address this issue. As of
 
 Will this approach work? Only time will tell. how this experiment evolves!
 
+
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-11-27</span>
 <img src="/mascot/hmmm.png" style="height: 170px; position: absolute; right: 0;" />

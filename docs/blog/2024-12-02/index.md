@@ -14,5 +14,8 @@ I’ve always wanted to participate, but life got in the way. This year, though,
 If you want to learn more about advent of code or wanna comepete in it use this following link:[ Advent Of Code](https://adventofcode.com)
 
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-12-02</span>
 <img src="/mascot/christmas-tree.png" style="height: 170px; position: absolute; right: 0;" />

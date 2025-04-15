@@ -253,5 +253,7 @@ Procedural generation lets you create infinite unique sprites. No two monsters w
 
 *Full code and interactive demo available on* [github.com/sairash/procemon](https://github.com/sairash/procemon) and [procemon.sairashgautam.com.np/?size=32&color=lime&background=black](https://procemon.sairashgautam.com.np/?size=32&color=lime&background=black)
 
+[Reply via Email](https://letterbird.co/sai)
+
 <span style="color: gray; font-size: 14px;">Date: 2025-02-15</span>
 <img src="/mascot/lobster.png" style="height: 170px; position: absolute; right: 0;" />

@@ -119,5 +119,8 @@ baz(); // 'hello closure'
 ```
 This was a very good find, I knew the concept of it beofre but looking at it raw and going through everything was good. I will be implementing the same thing in my language soon too.
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-11-15</span>
 <img src="/mascot/bye-hippo.png" style="height: 170px; position: absolute; right: 0;" />

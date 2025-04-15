@@ -28,6 +28,9 @@ My first job came in high school when I joined a team creating a web app that ai
 
 Starting my journey early gave me a `unique` advantage and the `freedom` to experiment and learn. And I’m proud to say I finally achieved that original dream from years ago: creating my own social network, **“Dantyakatha.”** That’s my story, up to December 2021—just the `beginning`, really, of where I hope to go.
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <img style="max-height: 170px; position: absolute; right: 0; margin-top: -60px;" src="/mascot/moustache.png"></img>
 
 <span style="color: gray; font-size: 14px;">Date: 2024-09-28</span>

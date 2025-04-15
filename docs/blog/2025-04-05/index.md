@@ -52,6 +52,8 @@ Swami Vivekananda didn't give me answers; he gave me a mirror. His writings remi
 
 **P.S.** If you’ve ever felt torn between faith and doubt, I’d love to hear your story. Sometimes, the most profound truths emerge not in certainty, but in the space between questions.
 
+[Reply via Email](https://letterbird.co/sai)
+
 <span style="color: gray; font-size: 14px;">Date: 2025-04-05</span>
 <img src="/mascot/dhol.png" style="height: 170px; position: absolute; right: 0;" />
 

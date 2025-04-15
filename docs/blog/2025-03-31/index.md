@@ -150,6 +150,7 @@ So now let’s color the terminal with red errors, green success messages, and m
 
 Thanks for reading! If you enjoyed this, drop a comment below with your favorite ANSI code combo. 🎨
 
+[Reply via Email](https://letterbird.co/sai)
 
 <span style="color: gray; font-size: 14px;">Date: 2025-03-30</span>
 <img src="/mascot/gorgeous.png" style="height: 170px; position: absolute; right: 0;" />

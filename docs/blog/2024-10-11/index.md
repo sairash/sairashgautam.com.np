@@ -16,4 +16,7 @@ I’m searching for an “escape language,” something I can use for personal s
 <img style="max-height: 170px; position: absolute; right: 0;" src="/mascot/holding-lots-of-books.png"></img>
 
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-10-11</span>

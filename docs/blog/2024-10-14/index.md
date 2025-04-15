@@ -11,6 +11,9 @@ As I started exploring V, the new language I was so intrigued by, I ran into a c
 
 Check it out here: [danfe-v](https://github.com/sairash/danfe-v)
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <img src="/mascot/danfe.png" style="height: 170px; position: absolute; right: 0;" />
 
 <span style="color: gray; font-size: 14px;">Date: 2024-10-14</span>

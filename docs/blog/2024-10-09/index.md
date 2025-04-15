@@ -86,6 +86,9 @@ There are a bunch of wires that `connect` it to the CPU.
 - **Data Bus    :** Data bus is `bi directional`, it is the wires from where data is transferred to and from the `CPU`. If the instruction is to read the data of the address `1001`, the data is going to be sent from the data bus by the ram and vice versa.
 
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-10-09</span>
 
 

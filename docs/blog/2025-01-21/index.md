@@ -106,5 +106,8 @@ If speed or highly specialized creative tasks are your top priority, OpenAI or C
     
 * [PromptLayer Model Comparison Tool](https://blog.promptlayer.com/openai-vs-deepseek-an-analysis-of-r1-and-o1-models/)
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2025-01-21</span>
 <img src="/mascot/clapclap.png" style="height: 170px; position: absolute; right: 0;" />

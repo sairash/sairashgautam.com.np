@@ -13,6 +13,7 @@ Today, despite a `101°F fever`, I had to meet a client. Somehow, I made it thro
 
 P.S. I’m at `104°F` right now :wink:
 
+[Reply via Email](https://letterbird.co/sai)
 
 <img src="/mascot/had-it-up-to-here.png" style="height: 170px; position: absolute; right: 0;" />
 

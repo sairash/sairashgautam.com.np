@@ -29,6 +29,9 @@ You might notice I haven’t mentioned any setbacks during development, and hone
 
 [Insearch of a new language](../2024-10-11/)
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-11-07</span>
 
 <br />

@@ -31,5 +31,8 @@ date: 2024-11-20
 - Be kind to yourself — you're the one person you'll always be with.
 
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-11-20</span>
 <img src="/mascot/life.png" style="height: 170px; position: absolute; right: 0;" />

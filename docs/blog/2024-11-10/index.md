@@ -150,6 +150,9 @@ The full code is provided in this github repo: [Link](https://github.com/danfe-d
 Writing an interpreter for brainfuck is `easier` than writing an actual brainfuck hello world program. Even tho, I created the whole interpreter I still can't write a bf program properly. It just shows how incredibly and masterfully the brainfuck esolang was created.
 
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-11-10</span>
 <img src="/mascot/woe-is-me.png" style="height: 170px; position: absolute; right: 0;" />
 

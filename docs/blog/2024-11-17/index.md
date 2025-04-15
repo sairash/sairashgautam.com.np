@@ -12,5 +12,8 @@ This is just a quick __update__, but an exciting one! I’ve successfully implem
 That moment led me to finally crack the process for creating hoisting in _Danfe_, and I couldn’t be more thrilled. This language, which I’ve been building using Vlang, is shaping up better every day. For now, it’s a __"toy language"__ for experimenting and learning, but it’s paving the way for something much bigger: the `official` Danfe. This next version will be a fully compiled language with way more features, drawing from everything I’ve learned along the way. The journey has just begun, and I can’t wait to see where it goes!
 
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-11-17</span>
 <img src="/mascot/bulb.png" style="height: 170px; position: absolute; right: 0;" />

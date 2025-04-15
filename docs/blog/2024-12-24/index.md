@@ -21,5 +21,8 @@ Now, as 2024 comes to a close, I stand on the edge of 2025, filled with new reso
 
 If I had to sum all of it up, it was the year I finally learned to **breathe**.
 
+[Reply via Email](https://letterbird.co/sai)
+
+
 <span style="color: gray; font-size: 14px;">Date: 2024-12-26</span>
 <img src="/mascot/peace_sign.png" style="height: 170px; position: absolute; right: 0;" />
