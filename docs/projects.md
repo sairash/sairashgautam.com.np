@@ -1,6 +1,7 @@
-# Projects
+# Projects and Companies
 These are the wide list of `projects` and `compinies` that I have worked on.
 
+---
 ## Intrested At The Moment
 
 <ul>
@@ -34,6 +35,7 @@ __{{project.date}}__
 </ul>
 <br/>
 
+---
 
 ## Companies worked for
 
@@ -68,6 +70,7 @@ __{{project.date}}__
 </ul>
 <br/>
 
+---
 
 ## Project Worked on
 
