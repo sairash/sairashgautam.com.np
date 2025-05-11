@@ -4,12 +4,31 @@
   var starting_year = "2021/05/28"
   var years = new Date(new Date() - new Date(starting_year)).getFullYear() - 1970;
   var nepali_years = toNepali(years)
+
+
+  let list_of_langugage = [
+    ["https://abrudz.github.io/logos/TypeScript.svg", "https://www.typescriptlang.org/"],
+    ["https://abrudz.github.io/logos/Go.svg", "https://go.dev/"],
+    ["https://abrudz.github.io/logos/PHP.svg", "https://www.php.net/"],
+    ["https://abrudz.github.io/logos/Python.svg", "https://www.python.org/"],
+    ["https://abrudz.github.io/logos/JS.svg", "https://developer.mozilla.org/en-US/docs/Web/JavaScript"],
+    ["https://abrudz.github.io/logos/V.svg", "https://vlang.io/"],
+    ["https://utfs.io/f/Jk6mQ2VBlE6tJvy6SfVBlE6tumDzfiKX2RrbsTLOPYUd4IV8", "https://danfe.sairashgautam.com.np/"],
+  ];
 </script>
 
 # Sairash Sharma Gautam
-<div class="info"> Fullstack Developer</div> 
-
 ## सइरश शर्मा गौतम 
+
+
+<div class="image-list">
+  <div class="info"> Fullstack Developer: </div>
+
+  <a v-for="item in list_of_langugage" target="_blank" :href="item[1]" > 
+    <img  :src="item[0]" />
+  </a>
+
+</div>
 
 
 _[नमस्ते - Namaste](./definations/namaste.md)_
@@ -47,6 +66,7 @@ I join forces with `founders` and `companies` to help mold their ideas and visio
 <!-- Creator of [danfe programming language](https://danfe.sairashgautam.com.np) and [screeenpals](https://screeenpals.sairashgautam.com.np).  -->
 
 ---
+
 ## Relevent Links
 
 - [Download My CV](https://drive.google.com/file/d/1Zz5EhxgF5lyRLBNNgMHhCr4hBp6QFA9i/view) 
@@ -72,5 +92,34 @@ a {
 
 .vp-doc p {
   margin: 0;
+}
+
+.image-list {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-list img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+.image-list a {
+  border-bottom: 0 !important;
+}
+
+.image-list a:hover {
+  border-bottom: 2px solid !important;
+}
+
+
+#सइरश-शर्मा-गौतम {
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+
+#सइरश-शर्मा-गौतम a {
+  display: none !important;
 }
 </style>
