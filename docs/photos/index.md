@@ -31,6 +31,9 @@ Photos From Month:
     const photos_2025 = [
         ["January", "/photos/2025#January"],
         ["February", "/photos/2025#February"],
+        ["March", "/photos/2025#March"],
+        ["April", "/photos/2025#April"],
+        ["May", "/photos/2025#May"],
     ]
 
     const photos = [
