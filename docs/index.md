@@ -1,4 +1,3 @@
-# Sairash Sharma Gautam
 
 <script setup>
   import {toNepali} from "./.vitepress/custom/nepali_number"
@@ -7,7 +6,11 @@
   var nepali_years = toNepali(years)
 </script>
 
+# Sairash Sharma Gautam
+<div class="info"> Fullstack Developer</div> 
+
 ## सइरश शर्मा गौतम 
+
 
 _[नमस्ते - Namaste](./definations/namaste.md)_
 
@@ -60,5 +63,14 @@ I join forces with `founders` and `companies` to help mold their ideas and visio
 a {
   /* text-decoration:underline !important;  */
   border-bottom: 2px solid !important;
+}
+
+.info {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.vp-doc p {
+  margin: 0;
 }
 </style>
