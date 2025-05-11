@@ -35,23 +35,22 @@ __{{project.date}}__
 <br/>
 
 
-## Project Worked on
-
+## Companies worked for
 
 <ul>
 
-<div v-for="project in project_data">
+<div v-for="project in work_data">
 
-<li v-if="project.type == 'project'">
+<li v-if="project.type == 'job'">
 
 `{{ project.title }}` - {{ project.small }}
 
 <img :src="project.image" style="height: 200px; border-radius: 15px;"/>
 
+
 Link to: <a :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
-
 __{{project.date}}__
 
 <div v-html="project.description"></div>
@@ -69,22 +68,24 @@ __{{project.date}}__
 </ul>
 <br/>
 
-## Companies worked for
+
+## Project Worked on
+
 
 <ul>
 
-<div v-for="project in work_data">
+<div v-for="project in project_data">
 
-<li v-if="project.type == 'job'">
+<li v-if="project.type == 'project'">
 
 `{{ project.title }}` - {{ project.small }}
 
 <img :src="project.image" style="height: 200px; border-radius: 15px;"/>
 
-
 Link to: <a :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
+
 __{{project.date}}__
 
 <div v-html="project.description"></div>
