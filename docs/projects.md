@@ -15,7 +15,7 @@ These are the wide list of `projects` and `compinies` that I have worked on.
 <img :src="project.image" style="height: 200px; border-radius: 15px;"/>
 
 
-Link to: <a :href="project.link">{{project.title}}</a>
+Link to: <a target="_blank" :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
 __{{project.date}}__
@@ -50,7 +50,7 @@ __{{project.date}}__
 <img :src="project.image" style="height: 200px; border-radius: 15px;"/>
 
 
-Link to: <a :href="project.link">{{project.title}}</a>
+Link to: <a target="_blank" :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
 __{{project.date}}__
@@ -85,7 +85,7 @@ __{{project.date}}__
 
 <img :src="project.image" style="height: 200px; border-radius: 15px;"/>
 
-Link to: <a :href="project.link">{{project.title}}</a>
+Link to: <a target="_blank" :href="project.link">{{project.title}}</a>
 
 ::: details Details -> {{project.title}}
 
