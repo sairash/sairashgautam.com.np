@@ -95,7 +95,7 @@ a {
 }
 
 .image-list {
-  padding-top: 10px;
+  padding: 10px 0px 20px 0px;
   display: flex;
   flex-wrap: wrap;
 }
