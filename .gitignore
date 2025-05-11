@@ -1,2 +1,4 @@
 node_modules
 docs/.vitepress/cache
+docs/.vitepress/custom/details.json
+docs/dist
