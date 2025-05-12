@@ -3,6 +3,6 @@
 </div>
 
 # Namaste
-`Namaste` also known as `Namaskar` is one of the ways you greet others in some of the South Asian Countries, including where I am from [Nepal](https://en.wikipedia.org/wiki/Nepal). <br>
+`Namaste`, also known as `Namaskar`, is a way to greet others in some South Asian countries, including my home country, [Nepal](https://en.wikipedia.org/wiki/Nepal). <br>
 
 For More Information check this [wiki](https://en.wikipedia.org/wiki/Namaste).
