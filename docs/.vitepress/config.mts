@@ -97,6 +97,7 @@ async function load(): Promise<UserConfig> {
 
       // Additional Meta Tags (Optional)
       ['meta', { name: 'msapplication-TileColor', content: '#000' }],
+      ['script', {src: 'https://scripts.withcabin.com/hello.js', async: ''}],
     ]
   })
 }
