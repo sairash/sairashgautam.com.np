@@ -2,7 +2,7 @@
 title: How to Color Your Terminal - Understanding ANSI Escape Codes
 description: Learn how to host SSH applications like pomossh
 head:
-    - ['link', {rel: 'preload', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6t07ToMRQDdIqhJteX6svxHmo2KjY3MVwz9bCa'}]
+    - ['link', {rel: 'prefetch', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6t07ToMRQDdIqhJteX6svxHmo2KjY3MVwz9bCa'}]
     - ['meta', { name: 'keywords', content: 'Learn how to host SSH applications like pomossh' }]
     - ['meta', { property: 'og:description', content: 'Learn how to host SSH applications like pomossh' }]
     - ['meta', { property: 'og:image', content: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6t07ToMRQDdIqhJteX6svxHmo2KjY3MVwz9bCa' }]

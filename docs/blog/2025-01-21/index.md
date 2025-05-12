@@ -2,7 +2,7 @@
 title: DeepSeek R1 vs. OpenAI and Claude
 description: DeepSeek R1 stands not as a mere alternative, but as a forerunner of a new paradigm where excellence need not command a premium, and sophistication coexists with accessibility.
 head:
-    - ['link', {rel: 'preload', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tNrGgaxSj0ntxoCrsXhAmI8D3PRWdc9pUeZ1z'}]
+    - ['link', {rel: 'prefetch', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tNrGgaxSj0ntxoCrsXhAmI8D3PRWdc9pUeZ1z'}]
     - ['meta', { name: 'keywords', content: 'DeepSeek R1, OpenAI, Claude AI, privacy' }]
     - ['meta', { property: 'og:description', content: 'DeepSeek R1 stands not as a mere alternative, but as a forerunner of a new paradigm where excellence need not command a premium, and sophistication coexists with accessibility.' }]
     - ['meta', { property: 'og:image', content: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tNrGgaxSj0ntxoCrsXhAmI8D3PRWdc9pUeZ1z' }]

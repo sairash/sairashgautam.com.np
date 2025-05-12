@@ -2,7 +2,7 @@
 title: Sairash's Portfolio
 description: I am a full stack developer passionate about crafting elegant, efficient code and constantly expanding my skill set by mastering new technologies. With a strong foundation built on self-drive and insatiable curiosity, I thrive in collaborative environments where teamwork and empathy play a key role. I enjoy tackling complex challenges and transforming innovative ideas into impactful digital solutions that deliver real-world value.
 head:
-    - ['link', {rel: 'preload', as: 'image', href: '/sairashgautam.com.np.png'}]
+    - ['link', {rel: 'prefetch', as: 'image', href: '/sairashgautam.com.np.png'}]
     - ['meta', { name: 'keywords', content: 'I am a full stack developer passionate about crafting elegant, efficient code and constantly expanding my skill set by mastering new technologies. With a strong foundation built on self-drive and insatiable curiosity, I thrive in collaborative environments where teamwork and empathy play a key role. I enjoy tackling complex challenges and transforming innovative ideas into impactful digital solutions that deliver real-world value.' }]
     - ['meta', { property: 'og:description', content: 'I am a full stack developer passionate about crafting elegant, efficient code and constantly expanding my skill set by mastering new technologies. With a strong foundation built on self-drive and insatiable curiosity, I thrive in collaborative environments where teamwork and empathy play a key role. I enjoy tackling complex challenges and transforming innovative ideas into impactful digital solutions that deliver real-world value.' }]
     - ['meta', { property: 'og:image', content: '/sairashgautam.com.np.png' }]

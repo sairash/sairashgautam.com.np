@@ -2,7 +2,7 @@
 title: Boost Golang Efficiency at No Cost
 description: Get 3–5% faster just by organizing your structs better.
 head:
-    - ['link', {rel: 'preload', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tZh9r0lLgjRlfiMK6r04kEQNc59egnYLduJA3'}]
+    - ['link', {rel: 'prefetch', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tZh9r0lLgjRlfiMK6r04kEQNc59egnYLduJA3'}]
     - ['meta', { name: 'keywords', content: 'Get 3–5% faster just by organizing your structs better' }]
     - ['meta', { property: 'og:description', content: 'Get 3–5% faster just by organizing your structs better' }]
     - ['meta', { property: 'og:image', content: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tZh9r0lLgjRlfiMK6r04kEQNc59egnYLduJA3' }]

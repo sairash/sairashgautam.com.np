@@ -2,7 +2,7 @@
 title: Beginners Guide- How to Procedurally Generate Monsters
 description: Procemon - How to make Procedural Monstor.
 head:
-    - ['link', {rel: 'preload', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tYhuuCPLr5NPLfyHCAXTI0wcDOVaRt3j1qU7e'}]
+    - ['link', {rel: 'prefetch', as: 'image', href: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tYhuuCPLr5NPLfyHCAXTI0wcDOVaRt3j1qU7e'}]
     - ['meta', { name: 'keywords', content: 'Procemon: Procedural Generated Monstor.' }]
     - ['meta', { property: 'og:description', content: 'Procemon: Make Procedural Monstor.' }]
     - ['meta', { property: 'og:image', content: 'https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tYhuuCPLr5NPLfyHCAXTI0wcDOVaRt3j1qU7e' }]
