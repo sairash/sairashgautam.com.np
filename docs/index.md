@@ -47,7 +47,7 @@ _[नमस्ते - Namaste](./definations/namaste.md)_
 
 | Sairash in Person | Sairash while Online |
 | --------------- | ---------- |
-| <img src="/sai/no-background.png" width="500"/> | <img src="/mascot/it-me.png" width="500"/> |
+| <img src="/sai/2.png" width="500"/> | <img src="/mascot/it-me.png" width="500"/> |
 
 
 
