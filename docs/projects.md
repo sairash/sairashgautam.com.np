@@ -52,7 +52,7 @@ __{{project.date}}__
 
 Link to: <a target="_blank" :href="project.link">{{project.title}}</a>
 
-::: details Details -> {{project.title}}
+::: details {{project.title}} {open}
 __{{project.date}}__
 
 <div v-html="project.description"></div>
@@ -87,7 +87,7 @@ __{{project.date}}__
 
 Link to: <a target="_blank" :href="project.link">{{project.title}}</a>
 
-::: details Details -> {{project.title}}
+::: details {{project.title}} {open}
 
 __{{project.date}}__
 
