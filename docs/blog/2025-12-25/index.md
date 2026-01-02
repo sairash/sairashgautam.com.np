@@ -85,6 +85,7 @@ The result of these optimizations is a server capable of handling extreme concur
 ChitoSocket began as a problem I couldn't ignore and turned into a project that completely changed how I approach building systems. By focusing on low-level details, managing memory carefully, and prioritizing performance, I learned that scalability isn't about tricks, it's about the basics. Beyond the numbers or benchmarks, ChitoSocket shows that curiosity, a bit of persistence, and the willingness to rethink everything can create something truly powerful. This project transformed Go from "a new language I was curious about" into the tool that reshaped how I design systems today. ChitoSocket is the result of curiosity meeting necessity and a reminder that sometimes the best way to solve a problem is to build the thing you wish already existed.
 
 
+[Github Repo: ChitoSocket](https://github.com/sairash/chitosocket)
 
 [Reply via Email](https://letterbird.co/sai)
 
