@@ -57,7 +57,6 @@
             ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6txunIjGuYYbLX9NaJM3cfTIQogd46w2rAWuK7", "2025-02-10"], 
             ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6twc9QgENF2MqUHbJiQOD8fPktGxB5KmlY9szo", "2025-02-11"], 
             ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tk8GnYGsJtwzFSDqExs53HfM7VZuCG8KhWNOl", "2025-02-12"], 
-            ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tL7BE94uEC9coqerdXTUMpmgu6VvIWanSiKHh", "2025-02-14"], 
             ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6trD2UzfdXJwOy7Z6pcIaS9AHD0PsuW1Yd3itl", "2025-02-20"], 
             ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tgvhBQZ7vjFl4rXYBLVJWMauU5hodzKTCAfsO", "2025-02-23"], 
             ["https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tIWbvLAT9cRd8AqSIukwmrYF7UopH2Kg13MD5", "2025-02-27"], 

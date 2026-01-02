@@ -16,7 +16,7 @@ date: 2025-05-12
 
 [<- Back to blogs](/blog)
 
-!["Truth can be stated in a thousand different ways, yet each one can be true” - Swami Vivekananda](https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tZh9r0lLgjRlfiMK6r04kEQNc59egnYLduJA3)
+!["Get 3–5% faster just by organizing your structs better](https://akocdw82ai.ufs.sh/f/Jk6mQ2VBlE6tZh9r0lLgjRlfiMK6r04kEQNc59egnYLduJA3)
 
 Ever pack a suitcase and realize halfway through that things don’t quite fit, even though they should? So, you take everything out, reorganize it more efficiently, and suddenly, there’s space to spare. Believe it or not, your computer does something very similar when it stores data in memory.
 
