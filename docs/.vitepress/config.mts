@@ -98,6 +98,19 @@ async function load(): Promise<UserConfig> {
       // Additional Meta Tags (Optional)
       ['meta', { name: 'msapplication-TileColor', content: '#000' }],
       ['script', {src: 'https://scripts.withcabin.com/hello.js', async: ''}],
+      ['script', {type: 'text/javascript', info: 'fathom-script'}, `(function(f, a, t, h, o, m){
+            a[h]=a[h]||function(){
+              (a[h].q=a[h].q||[]).push(arguments)
+            };
+            o=f.createElement('script'),
+            m=f.getElementsByTagName('script')[0];
+            o.async=1; o.src=t; o.id='fathom-script';
+            m.parentNode.insertBefore(o,m)
+          })(document, window, '//sairash.alwaysdata.net/tracker.js', 'fathom');
+          fathom('set', 'siteId', 'CYNJM');
+          fathom('trackPageview');
+        
+        `]
     ]
   })
 }
